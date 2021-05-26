@@ -1,4 +1,5 @@
 const mysql = require('mysql2');
+const secret = require('../secrets');
 
 
 const db = mysql.createConnection(
@@ -7,7 +8,7 @@ const db = mysql.createConnection(
         // Your MySQL username,
         user: 'root',
         // SQL Password
-        password: 'SurfaceSkis12!!',
+        password: secret,
         database: 'election'
     },
     console.log('Connected to the election database')
